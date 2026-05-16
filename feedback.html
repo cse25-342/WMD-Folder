@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mercedes-Benz Electric | Home</title>
+  <title>Mercedes-Benz Electric | Contact & Feedback</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -23,11 +23,11 @@
           </button>
           <div class="collapse navbar-collapse nav-center-group justify-content-center" id="mainNav">
             <ul class="navbar-nav nav-links-centered align-items-lg-center mx-auto">
-              <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
               <li class="nav-item"><a class="nav-link" href="models.html">Models</a></li>
               <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
               <li class="nav-item"><a class="nav-link" href="testdrive.html">Test Drive</a></li>
-              <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
+              <li class="nav-item"><a class="nav-link active" href="feedback.html">Feedback</a></li>
               <li class="nav-item"><a class="nav-cta-link" href="testdrive.html">Book Drive</a></li>
             </ul>
           </div>
@@ -36,84 +36,64 @@
     </header>
 
     <main class="site-main">
-      <section class="hero-section">
-        <img class="hero-image-fill" src="assets/images/cars/eqv-era-campaign.png" alt="Mercedes-Benz EQV campaign hero visual">
+      <section class="page-hero hero-section">
+        <img class="hero-image-fill" src="assets/images/cars/eqv-era-campaign.png" alt="Mercedes EQV campaign image on feedback page">
         <div class="hero-overlay"></div>
-      </section>
-
-      <section class="home-atelier fade-section" id="why-electric">
-        <div class="container-premium atelier-grid">
-          <div class="atelier-copy">
-            <p class="section-kicker">The EQV Atelier</p>
-            <h2>Luxury electric travel, arranged with restraint.</h2>
-            <p>Every appointment is private. Every model is presented around the way you travel: executives, family, hospitality, fleet, or long-distance touring.</p>
-          </div>
-          <div class="atelier-image-panel">
-            <img src="assets/images/cars/eqv-interior-dark.png" alt="Mercedes EQV dark cabin with ambient lighting">
-          </div>
-        </div>
-
-        <div class="container-premium atelier-principles">
-          <article>
-            <span>01</span>
-            <h3>Discreet Arrival</h3>
-            <p>Exterior presence without noise, tuned for clients who value quiet authority.</p>
-          </article>
-          <article>
-            <span>02</span>
-            <h3>Executive Calm</h3>
-            <p>Interior comfort, lighting, and seating configured around real passenger use.</p>
-          </article>
-          <article>
-            <span>03</span>
-            <h3>Prepared Ownership</h3>
-            <p>Charging, route planning, and handover support handled before delivery.</p>
-          </article>
+        <div class="container-premium hero-content">
+          <p class="section-kicker">Contact and Feedback</p>
+          <h1>Connect With Our Team</h1>
+          <p>Tell us your model preference and preferred contact details. Our consultants will respond promptly.</p>
         </div>
       </section>
 
-      <section class="home-collection fade-section">
-        <div class="container-premium collection-heading">
-          <p class="section-kicker">Featured Models</p>
-          <h2>A quieter kind of presence.</h2>
-        </div>
+      <section class="section-block fade-section">
+        <div class="container-premium feedback-wrap">
+          <div id="feedbackFormArea">
+            <div class="feedback-form">
+              <p id="formError" class="feedback-error" aria-live="polite"></p>
+              <form id="feedbackForm" novalidate>
+                <div class="mb-3">
+                  <label class="form-label" for="fullName">Full Name</label>
+                  <input class="form-control" type="text" id="fullName" name="fullName" required>
+                </div>
 
-        <div class="container-premium collection-gallery">
-          <a class="collection-feature" href="models.html">
-            <figure>
-              <img src="assets/images/cars/eqv-front.png" alt="Mercedes EQV front profile on wet city road">
-            </figure>
-            <div>
-              <p class="collection-index">01 / Signature Line</p>
-              <h3>Composed from the first glance.</h3>
-              <p>Dark exterior detailing, a confident illuminated face, and electric motion shaped for executive arrivals.</p>
-              <span>Explore Model</span>
-            </div>
-          </a>
+                <div class="mb-3">
+                  <label class="form-label" for="email">Email Address</label>
+                  <input class="form-control" type="email" id="email" name="email" required>
+                </div>
 
-          <a class="collection-feature is-reverse" href="models.html">
-            <figure>
-              <img src="assets/images/cars/eqv-interior-white.png" alt="Mercedes EQV premium white interior cockpit">
-            </figure>
-            <div>
-              <p class="collection-index">02 / Luxury Cabin</p>
-              <h3>A private lounge in motion.</h3>
-              <p>Light upholstery, ambient cabin glow, and flexible space designed around calm passenger movement.</p>
-              <span>Explore Model</span>
-            </div>
-          </a>
+                <div class="mb-3">
+                  <label class="form-label" for="phone">Phone Number</label>
+                  <input class="form-control" type="tel" id="phone" name="phone" required>
+                </div>
 
-          <a class="collection-feature" href="models.html">
-            <figure>
-              <img src="assets/images/cars/eqv-rear-drive.png" alt="Mercedes EQV rear driving shot with illuminated taillights">
-            </figure>
-            <div>
-              <p class="collection-index">03 / Signature Rear</p>
-              <h3>Designed to leave a memory.</h3>
-              <p>Subtle chrome, red rear light definition, and a long electric silhouette with road presence.</p>
-              <span>Explore Model</span>
+                <div class="mb-3">
+                  <label class="form-label" for="modelInterest">Select Model of Interest</label>
+                  <select class="form-select" id="modelInterest" name="modelInterest" required>
+                    <option value="" selected disabled>Choose a model</option>
+                    <option value="eqv-exterior">EQV 300 Exterior</option>
+                    <option value="eqv-luxury-cabin">EQV Luxury Cabin</option>
+                    <option value="eqv-signature-rear">EQV Signature Rear</option>
+                  </select>
+                </div>
+
+                <div class="mb-4">
+                  <label class="form-label" for="message">Message / Feedback</label>
+                  <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                </div>
+
+                <button class="cta-button" type="submit">Submit</button>
+              </form>
             </div>
-          </a>
+          </div>
+
+          <div id="formSuccess" class="feedback-success is-hidden" aria-live="polite">
+            <h2>Thank you for your feedback.</h2>
+            <p>We received your submission and our Mercedes-Benz electric team will contact you shortly.</p>
+            <div class="mt-4">
+              <a class="outline-button" href="models.html">Back to Models</a>
+            </div>
+          </div>
         </div>
       </section>
     </main>

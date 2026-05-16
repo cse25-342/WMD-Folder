@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mercedes-Benz Electric | Home</title>
+  <title>Mercedes-Benz Electric | Book a Test Drive</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -23,10 +23,10 @@
           </button>
           <div class="collapse navbar-collapse nav-center-group justify-content-center" id="mainNav">
             <ul class="navbar-nav nav-links-centered align-items-lg-center mx-auto">
-              <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
               <li class="nav-item"><a class="nav-link" href="models.html">Models</a></li>
               <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-              <li class="nav-item"><a class="nav-link" href="testdrive.html">Test Drive</a></li>
+              <li class="nav-item"><a class="nav-link active" href="testdrive.html">Test Drive</a></li>
               <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
               <li class="nav-item"><a class="nav-cta-link" href="testdrive.html">Book Drive</a></li>
             </ul>
@@ -36,84 +36,43 @@
     </header>
 
     <main class="site-main">
-      <section class="hero-section">
-        <img class="hero-image-fill" src="assets/images/cars/eqv-era-campaign.png" alt="Mercedes-Benz EQV campaign hero visual">
+      <section class="page-hero hero-section">
+        <video class="hero-video" autoplay muted loop playsinline poster="assets/images/cars/eqv-trailer.jpg">
+          <source src="assets/video/testdrive-hero.mp4" type="video/mp4">
+        </video>
+        <img class="hero-image-fill hero-video-fallback" src="assets/images/cars/eqv-side-motion.png" alt="Mercedes EQV test drive hero on city lane">
         <div class="hero-overlay"></div>
-      </section>
-
-      <section class="home-atelier fade-section" id="why-electric">
-        <div class="container-premium atelier-grid">
-          <div class="atelier-copy">
-            <p class="section-kicker">The EQV Atelier</p>
-            <h2>Luxury electric travel, arranged with restraint.</h2>
-            <p>Every appointment is private. Every model is presented around the way you travel: executives, family, hospitality, fleet, or long-distance touring.</p>
-          </div>
-          <div class="atelier-image-panel">
-            <img src="assets/images/cars/eqv-interior-dark.png" alt="Mercedes EQV dark cabin with ambient lighting">
-          </div>
-        </div>
-
-        <div class="container-premium atelier-principles">
-          <article>
-            <span>01</span>
-            <h3>Discreet Arrival</h3>
-            <p>Exterior presence without noise, tuned for clients who value quiet authority.</p>
-          </article>
-          <article>
-            <span>02</span>
-            <h3>Executive Calm</h3>
-            <p>Interior comfort, lighting, and seating configured around real passenger use.</p>
-          </article>
-          <article>
-            <span>03</span>
-            <h3>Prepared Ownership</h3>
-            <p>Charging, route planning, and handover support handled before delivery.</p>
-          </article>
+        <div class="container-premium hero-content">
+          <p class="section-kicker">Book Your Drive</p>
+          <h1>Experience It First.</h1>
+          <p>Step inside our electric range and feel premium performance in motion before making your final decision.</p>
         </div>
       </section>
 
-      <section class="home-collection fade-section">
-        <div class="container-premium collection-heading">
-          <p class="section-kicker">Featured Models</p>
-          <h2>A quieter kind of presence.</h2>
-        </div>
+      <section class="section-block fade-section">
+        <div class="container-premium">
+          <p class="section-kicker">How Booking Works</p>
+          <div class="steps-grid">
+            <article class="step-card">
+              <span class="step-index">Step 01</span>
+              <h3>Select Model</h3>
+              <p>Choose the electric model that fits your route, seat capacity, and luxury preferences.</p>
+            </article>
+            <article class="step-card">
+              <span class="step-index">Step 02</span>
+              <h3>Choose Date</h3>
+              <p>Pick a date and time slot with our team to ensure a focused and uninterrupted test drive session.</p>
+            </article>
+            <article class="step-card">
+              <span class="step-index">Step 03</span>
+              <h3>Visit Us</h3>
+              <p>Arrive at the showroom, complete a quick check-in, and start your guided electric driving experience.</p>
+            </article>
+          </div>
 
-        <div class="container-premium collection-gallery">
-          <a class="collection-feature" href="models.html">
-            <figure>
-              <img src="assets/images/cars/eqv-front.png" alt="Mercedes EQV front profile on wet city road">
-            </figure>
-            <div>
-              <p class="collection-index">01 / Signature Line</p>
-              <h3>Composed from the first glance.</h3>
-              <p>Dark exterior detailing, a confident illuminated face, and electric motion shaped for executive arrivals.</p>
-              <span>Explore Model</span>
-            </div>
-          </a>
-
-          <a class="collection-feature is-reverse" href="models.html">
-            <figure>
-              <img src="assets/images/cars/eqv-interior-white.png" alt="Mercedes EQV premium white interior cockpit">
-            </figure>
-            <div>
-              <p class="collection-index">02 / Luxury Cabin</p>
-              <h3>A private lounge in motion.</h3>
-              <p>Light upholstery, ambient cabin glow, and flexible space designed around calm passenger movement.</p>
-              <span>Explore Model</span>
-            </div>
-          </a>
-
-          <a class="collection-feature" href="models.html">
-            <figure>
-              <img src="assets/images/cars/eqv-rear-drive.png" alt="Mercedes EQV rear driving shot with illuminated taillights">
-            </figure>
-            <div>
-              <p class="collection-index">03 / Signature Rear</p>
-              <h3>Designed to leave a memory.</h3>
-              <p>Subtle chrome, red rear light definition, and a long electric silhouette with road presence.</p>
-              <span>Explore Model</span>
-            </div>
-          </a>
+          <div class="mt-5">
+            <a class="cta-button" href="feedback.html">Continue to Contact &amp; Feedback</a>
+          </div>
         </div>
       </section>
     </main>
